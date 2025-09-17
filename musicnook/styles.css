@@ -1,0 +1,302 @@
+/* General body */
+body {
+  background-image: url("img/bg_home.gif");
+  background-color: #f6e1dc;
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Page layout */
+.page {
+  display: flex;
+  max-width: 1100px;
+  margin: 40px auto;
+  gap: 20px;
+  align-items: flex-start;
+}
+
+/* Sidebar */
+.sidebar {
+  width: 220px;
+  background: linear-gradient(180deg, #FCC0DE, #5EFC8D);
+  border: 3px solid #473BF0;
+  border-radius: 20px;
+  padding: 20px;
+}
+
+.sidebar h1 {
+  font-family: "Courier New", monospace;
+  font-size: 22px;
+  text-align: center;
+  color: #000500;
+  margin-bottom: 20px;
+  letter-spacing: 1px;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sidebar li {
+  margin: 12px 0;
+}
+
+.sidebar a {
+  display: block;
+  padding: 10px 14px;
+  border-radius: 12px;
+  background: #6c6c6c;
+  border: 2px solid #e3b5c4;
+  font-family: "Comic Sans MS", "Comic Neue", cursive;
+  font-size: 14px;
+  color: #5EFC8D;
+  font-weight: bold;
+  text-decoration: none;
+  transition: background 0.3s, color 0.3s, transform 0.15s;
+}
+
+.sidebar a:hover {
+  background: #fcc0de;
+  color: #ffffff;
+  transform: translateX(4px);
+}
+
+/* Top-right container */
+.top-right {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+/* Honorable mentions */
+.honorable {
+  background: linear-gradient(135deg, #FCC0DE, #BA3F1D);
+  border: 3px solid #473BF0;
+  border-radius: 20px;
+  padding: 15px;
+  text-align: center;
+  box-shadow: 4px 4px 0 #cadbc0;
+  max-width: 400px;
+  flex: 1;
+}
+
+.honorable h2 {
+  font-family: "Courier New", monospace;
+  font-size: 18px;
+  color: #ffffff;
+  margin-bottom: 10px;
+}
+
+.honorable-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+}
+
+.honorable-item {
+  flex: 0 1 120px;
+}
+
+.honorable-item img {
+  width: 100%;
+  border-radius: 12px;
+  border: 2px dashed #50858b;
+  transition: transform 0.2s;
+}
+
+.honorable-item img:hover {
+  transform: scale(1.05) rotate(-2deg);
+}
+
+.honorable-item p {
+  margin-top: 5px;
+  font-family: "Comic Sans MS", "Comic Neue", cursive;
+  font-size: 14px;
+  color: #7FD1B9;
+  font-weight: bold;
+}
+
+.honorable-item a {
+  color: #ebcf55;
+  text-decoration: none;
+  font-weight: bold;
+  border-bottom: 1px dotted #d45d9f;
+}
+
+.honorable-item a:hover {
+  color: #7EB2DD;
+  border-color: #5c2d91;
+}
+
+/* Fun image */
+.funimage {
+  background: linear-gradient(135deg, #f3b700, #f63e02);
+  border: 3px solid #083d77;
+  border-radius: 20px;
+  padding: 15px;
+  text-align: center;
+  box-shadow: 4px 4px 0 #adf7b6;
+  max-width: 200px;
+  flex-shrink: 0;
+}
+
+.funimage img {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+}
+
+/* Poster box */
+.poster-box {
+  background-color: #fffaf7;
+  max-width: 850px;
+  margin: 40px auto;
+  padding: 30px;
+  border-radius: 20px;
+  text-align: center;
+  background: linear-gradient(135deg, #e6e6ff, #e6fff5, #fff0f5);
+  background-origin: border-box;
+  background-clip: padding-box, border-box;
+  box-shadow: 4px 4px 0 #7a9e7e;
+}
+
+/* Poster gallery */
+.poster-gallery {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.poster-gallery img {
+  width: 100%;
+  max-width: 200px;
+  height: auto;
+  border-radius: 8px;
+}
+
+/* =================== */
+/* Welcome Section */
+.welcome {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  margin-top: 30px;
+  padding: 25px 30px;
+  background: linear-gradient(145deg, #fdf6f7, #e6f0ff);
+  border-radius: 25px;
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.08);
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Subtle glow behind text */
+.welcome::before {
+  content: "";
+  position: absolute;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(circle at center, #ffe6f7, transparent 70%);
+  top: -50%;
+  left: -50%;
+  z-index: 0;
+  opacity: 0.3;
+  transform: rotate(45deg);
+}
+
+/* Text on top */
+.welcome h2,
+.welcome p {
+  position: relative;
+  z-index: 1;
+  font-family: "Comic Sans MS", "Comic Neue", cursive;
+  color: #A3320B;
+  margin: 0;
+}
+
+
+/* Slightly playful small image */
+.welcome img {
+  width: 100px;
+  height: auto;
+  position: relative;
+  z-index: 1;
+  animation: float 3s ease-in-out infinite;
+}
+
+/* Floating animation for the small image */
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-8px) rotate(-2deg);
+  }
+}
+
+/* DJ Playing section inside poster box */
+.playing {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 30px;
+  background: linear-gradient(135deg, #C3D350, #F7A278);
+  padding: 15px 25px;
+  border-radius: 15px;
+  border: 2px solid #4a314d;
+  box-shadow: 3px 3px 0 #A13D63;
+}
+
+.playing .dj {
+  width: 150px;
+  height: auto;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  border: 2px solid #ffffff;
+}
+
+.playing p {
+  font-family: "Comic Sans MS", "Comic Neue", cursive;
+  font-size: 14px;
+  color: #E7F4F9;
+  text-align: center;
+  margin: 5px 0 0 0;
+}
+
+.playing a {
+  color: #4C191B;
+  font-weight: bold;
+  text-decoration: none;
+  border-bottom: 1px dotted #5c2d91;
+  transition: color 0.2s, border-color 0.2s;
+}
+
+.playing a:hover {
+  color: #e0eb86;
+  border-color: #d45d9f;
+  transform: translateY(-2px);
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  margin: 40px 0;
+  font-size: 14px;
+}
+
+footer a {
+  color: #333;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
